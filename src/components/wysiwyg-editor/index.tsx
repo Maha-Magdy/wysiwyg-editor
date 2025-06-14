@@ -22,7 +22,7 @@ function WysiwygEditor({ value, callback, className, style, contentApi, onSaveSu
     const [wordCount, setWordCount] = useState<number>(countWords(editorState.getCurrentContent()));
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [isSaving, setIsSaving] = useState<boolean>(false);
-    const [saveError, setSaveError] = useState<string | null>(null);
+    // const [saveError, setSaveError] = useState<string | null>(null);
     const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
 
     const handleToolbarAction = (command: DraftInlineStyleType) => {
@@ -82,7 +82,7 @@ function WysiwygEditor({ value, callback, className, style, contentApi, onSaveSu
         if (!hasUnsavedChanges || isSaving) return;
 
         setIsSaving(true);
-        setSaveError(null);
+        // setSaveError(null);
 
         try {
             await fakeSaveContentAPI(convertToRaw(editorState.getCurrentContent()));
@@ -90,7 +90,7 @@ function WysiwygEditor({ value, callback, className, style, contentApi, onSaveSu
             onSaveSuccess && onSaveSuccess(); // Notify parent
         } catch (error) {
             console.error("Failed to save content:", error);
-            setSaveError("Failed to save content. Please try again.");
+            // setSaveError("Failed to save content. Please try again.");
             onSaveError && onSaveError(error); // Notify parent
         } finally {
             setIsSaving(false);

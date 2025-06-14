@@ -21,3 +21,23 @@
     max-width: 960px;
   }
 }
+
+.wysiwyg-editor-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.wysiwyg-editor-demo h2 {
+  color: #333333;
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.preview-controlled-component-status {
+  padding: 0.25em;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  margin: 1em 0 0;
+  text-align: center;
+}
