@@ -56,12 +56,9 @@ To integrate the WYSIWYG Editor into your existing project:
 
 ## Demo
 
-Here are the links to the live demo and the video demo of the Printify Studio:
+Here is the link to the live demo of the WYSIWYG Editor:
 
-- [Live Demo Link](https://maha-magdy.github.io/printify-studio/)
-- Video Demo
-
-https://github.com/Maha-Magdy/printify-studio/assets/62838415/2f4b7ea9-9823-482b-9c2a-65bf7b5fb5f3
+- [Live Demo Link](https://maha-magdy.github.io/wysiwyg-editor/)
 
 <a name="props_reference"></a>
 ``` 
@@ -112,7 +109,7 @@ interface WysiwygEditorProps {
 
 ## Examples
 
-For examples, see the **app.tsx** file.
+For examples, see the <a href='./src/App.tsx'>**app.tsx**</a> file.
 
 <a name="contributing"></a>
 
