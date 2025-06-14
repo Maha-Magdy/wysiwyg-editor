@@ -1,0 +1,107 @@
+.wysiwyg-editor {
+    padding: 0.5em;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    color: #333333;
+}
+
+.wysiwyg-toolbar {
+    display: flex;
+    gap: 0.25em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid lightgrey;
+}
+
+.wysiwyg-button {
+    font-size: 1em;
+    background-color: transparent;
+    border: unset;
+    padding: 0.5em 0.75em;
+    cursor: pointer;
+    border-radius: 0.25em;
+    color: #333333;
+}
+
+.wysiwyg-button:hover {
+    background-color: #eaeaea;
+}
+
+.wysiwyg-editor .DraftEditor-root,
+.wysiwyg-loading {
+    flex: 1 0 auto;
+}
+
+@keyframes l1 {
+    to {
+        clip-path: inset(0 -34% 0 0)
+    }
+}
+
+.wysiwyg-loading {
+    display: flex;
+    gap: .25em;
+    justify-content: center;
+    align-items: center;
+}
+
+.wysiwyg-loading p {
+    margin: 0;
+}
+
+.wysiwyg-dots-loader {
+    width: 12px;
+    margin-top: 4px;
+    aspect-ratio: 4;
+    background: radial-gradient(circle closest-side, #333333 90%, #0000) 0/calc(100%/3) 100% space;
+    clip-path: inset(0 100% 0 0);
+    animation: l1 1s steps(4) infinite;
+}
+
+.wysiwyg-status-bar {
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    border-top: 1px solid lightgrey;
+    text-align: end;
+    font-size: 0.85em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wysiwyg-status-bar.word-count-status-only {
+    justify-content: end;
+}
+
+.wysiwyg-word-count p {
+    color: #8b8b8b;
+    margin: 0;
+}
+
+.wysiwyg-save-actions {
+    display: flex;
+    gap: 1em
+}
+
+.wysiwyg-save-actions button {
+    background: transparent;
+    border: 1px solid #333333;
+    border-radius: 0.25em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+}
+
+.wysiwyg-save-actions button:hover {
+    background: #f2f2f2;
+}
+
+.wysiwyg-save-actions button .wysiwyg-dots-loader {
+    margin-top: 0;
+}
