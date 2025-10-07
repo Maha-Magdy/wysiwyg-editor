@@ -13,6 +13,7 @@ This is a flexible **React WYSIWYG editor component**, crafted on top of **Draft
   - [Table of contents](#table-of-contents)
   - [Features](#features)
   - [Getting Started](#getting-started)
+  - [Props Reference](#props-reference)
   - [Demo](#demo)
   - [Examples](#examples)
   - [Contributing](#contributing)
@@ -52,15 +53,9 @@ To integrate the WYSIWYG Editor into your existing project:
 - **Copy the component**: Simply copy the wysiwyg-editor folder from the components directory into your project.
 - **Integrate and use**: Refer to the examples provided in the project for guidance on how to use the component in your own application.
 
-<a name="demo"></a>
-
-## Demo
-
-Here is the link to the live demo of the WYSIWYG Editor:
-
-- [Live Demo Link](https://maha-magdy.github.io/wysiwyg-editor/)
-
 <a name="props_reference"></a>
+## Props Reference
+
 ``` 
 interface WysiwygEditorProps {
     /**
@@ -104,6 +99,14 @@ interface WysiwygEditorProps {
     toolbarOptions?: string[];
 }
 ``` 
+
+<a name="demo"></a>
+
+## Demo
+
+Here is the link to the live demo of the WYSIWYG Editor:
+
+- [Live Demo Link](https://maha-magdy.github.io/wysiwyg-editor/)
 
 <a name="examples"></a>
 
